@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">com.BunnyCart.TestRunner.BunnyCartDemo1<br>com.BunnyCart.TestRunner.BunnyCartDemo2<br>com.BunnyCart.TestRunner.BunnyCartDemo3<br>com.BunnyCart.TestRunner.BunnyCartDemo4<br>com.BunnyCart.TestRunner.BunnyCartDemo5<br></th>
+	    <th id="testClassNameId" hidden="true">BunnyCartDemo1<br>BunnyCartDemo2<br>BunnyCartDemo3<br>BunnyCartDemo4<br>BunnyCartDemo5<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\Sathwika\eclipse-workspace\BunnyCart\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:02</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>5</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																												
+											<tr>
+	<td class="time">1742964591009</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('f54aaedd-5fae-40dd-a5df-c5930301fa8d','block');changeSingleIcon('span-f54aaedd-5fae-40dd-a5df-c5930301fa8d');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo1</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-f54aaedd-5fae-40dd-a5df-c5930301fa8d' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591009</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.353s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check invalid data registration", "User Registration"</span><br>
+				<div class="noCollapse" id="f54aaedd-5fae-40dd-a5df-c5930301fa8d" style="display: block;">
+						<a href="javascript:toggleElement('exception-f54aaedd-5fae-40dd-a5df-c5930301fa8d','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-f54aaedd-5fae-40dd-a5df-c5930301fa8d">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/1_CreateAccount.feature:4)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-f54aaedd-5fae-40dd-a5df-c5930301fa8d','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-f54aaedd-5fae-40dd-a5df-c5930301fa8d">
+							java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)<br/>
+							java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)<br/>
+							java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)<br/>
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/1_CreateAccount.feature:4)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1742964591459</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('c18710b9-73c2-4bfa-8739-fd47ed8c89ad','block');changeSingleIcon('span-c18710b9-73c2-4bfa-8739-fd47ed8c89ad');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo1</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-c18710b9-73c2-4bfa-8739-fd47ed8c89ad' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591459</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.045s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check User registration with valid data", "User Registration"</span><br>
+				<div class="noCollapse" id="c18710b9-73c2-4bfa-8739-fd47ed8c89ad" style="display: block;">
+						<a href="javascript:toggleElement('exception-c18710b9-73c2-4bfa-8739-fd47ed8c89ad','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-c18710b9-73c2-4bfa-8739-fd47ed8c89ad">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/1_CreateAccount.feature:4)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-c18710b9-73c2-4bfa-8739-fd47ed8c89ad','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-c18710b9-73c2-4bfa-8739-fd47ed8c89ad">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/1_CreateAccount.feature:4)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+									<tr>
+	<td class="time">1742964591593</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('c40317e1-d466-4344-a018-ab061e2ff2c9','block');changeSingleIcon('span-c40317e1-d466-4344-a018-ab061e2ff2c9');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo2</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-c40317e1-d466-4344-a018-ab061e2ff2c9' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591593</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.038s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check Sign in and serch for product and Add to cart", "Unknown"</span><br>
+				<div class="noCollapse" id="c40317e1-d466-4344-a018-ab061e2ff2c9" style="display: block;">
+						<a href="javascript:toggleElement('exception-c40317e1-d466-4344-a018-ab061e2ff2c9','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-c40317e1-d466-4344-a018-ab061e2ff2c9">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/2_SignIn_AddtoCart.feature:3)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-c40317e1-d466-4344-a018-ab061e2ff2c9','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-c40317e1-d466-4344-a018-ab061e2ff2c9">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/2_SignIn_AddtoCart.feature:3)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+									<tr>
+	<td class="time">1742964591730</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('5972ff98-e1c6-4990-96ef-f5c0804eec19','block');changeSingleIcon('span-5972ff98-e1c6-4990-96ef-f5c0804eec19');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo3</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-5972ff98-e1c6-4990-96ef-f5c0804eec19' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591730</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.034s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check sign in with valid  data", "Unknown"</span><br>
+				<div class="noCollapse" id="5972ff98-e1c6-4990-96ef-f5c0804eec19" style="display: block;">
+						<a href="javascript:toggleElement('exception-5972ff98-e1c6-4990-96ef-f5c0804eec19','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-5972ff98-e1c6-4990-96ef-f5c0804eec19">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/3_SignIn_Valid_Invalid.feature:12)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-5972ff98-e1c6-4990-96ef-f5c0804eec19','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-5972ff98-e1c6-4990-96ef-f5c0804eec19">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/3_SignIn_Valid_Invalid.feature:12)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1742964591694</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('e811749e-1f2d-4e04-9399-0d132b3970ae','block');changeSingleIcon('span-e811749e-1f2d-4e04-9399-0d132b3970ae');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo3</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-e811749e-1f2d-4e04-9399-0d132b3970ae' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591694</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.028s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check Sign in with invalid data", "Unknown"</span><br>
+				<div class="noCollapse" id="e811749e-1f2d-4e04-9399-0d132b3970ae" style="display: block;">
+						<a href="javascript:toggleElement('exception-e811749e-1f2d-4e04-9399-0d132b3970ae','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-e811749e-1f2d-4e04-9399-0d132b3970ae">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/3_SignIn_Valid_Invalid.feature:3)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-e811749e-1f2d-4e04-9399-0d132b3970ae','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-e811749e-1f2d-4e04-9399-0d132b3970ae">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/3_SignIn_Valid_Invalid.feature:3)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+									<tr>
+	<td class="time">1742964591828</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('a38106c4-dfa9-41b4-9b40-7098186c35b6','block');changeSingleIcon('span-a38106c4-dfa9-41b4-9b40-7098186c35b6');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo4</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-a38106c4-dfa9-41b4-9b40-7098186c35b6' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591828</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.049s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Add Multiple Products to cart", "Unknown"</span><br>
+				<div class="noCollapse" id="a38106c4-dfa9-41b4-9b40-7098186c35b6" style="display: block;">
+						<a href="javascript:toggleElement('exception-a38106c4-dfa9-41b4-9b40-7098186c35b6','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-a38106c4-dfa9-41b4-9b40-7098186c35b6">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/4_MultipleProducts_AddToCart.feature:3)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-a38106c4-dfa9-41b4-9b40-7098186c35b6','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-a38106c4-dfa9-41b4-9b40-7098186c35b6">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/4_MultipleProducts_AddToCart.feature:3)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+									<tr>
+	<td class="time">1742964591930</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('f9f92594-d62c-451c-830e-815c138774b5','block');changeSingleIcon('span-f9f92594-d62c-451c-830e-815c138774b5');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.BunnyCart.TestRunner.BunnyCartDemo5</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-f9f92594-d62c-451c-830e-815c138774b5' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742964591930</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>0.047s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To check User click on sign out", "Unknown"</span><br>
+				<div class="noCollapse" id="f9f92594-d62c-451c-830e-815c138774b5" style="display: block;">
+						<a href="javascript:toggleElement('exception-f9f92594-d62c-451c-830e-815c138774b5','block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/BunnyCart/Browser/Browser</b></a><br/>
+		<div class="stackTrace" id="exception-f9f92594-d62c-451c-830e-815c138774b5">
+					com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+					✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/5_SignOut.feature:3)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-f9f92594-d62c-451c-830e-815c138774b5','block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.BunnyCart.Browser.Browser</a><br/>
+			<div class="stackTrace" id="causedBy-f9f92594-d62c-451c-830e-815c138774b5">
+							com.BunnyCart.StepDefinition.Scenario1.user_opens_the_browser(Scenario1.java:14)<br/>
+							✽.User opens the Browser(file:///C:/Users/Sathwika/eclipse-workspace/BunnyCart/src/test/resources/com/BunnyCart/Feature/5_SignOut.feature:3)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+						
+				
+			  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
